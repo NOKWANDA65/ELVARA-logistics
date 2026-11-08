@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvara Logistics | Warehouse Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">E</div>
+            <div>
+                <h1>elvara</h1>
+                <small>LOGISTICS</small>
+            </div>
+        </div>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav>
+            <button class="nav-link active" data-page="dashboard">▦ Dashboard</button>
+            <button class="nav-link" data-page="shipments">▤ Shipments</button>
+            <button class="nav-link" data-page="pallets">▥ Pallet allocation</button>
+            <button class="nav-link" data-page="drivers">♙ Drivers</button>
+            <button class="nav-link" data-page="vehicles">▣ Vehicles</button>
+            <button class="nav-link" data-page="dispatch">⇧ Dispatch</button>
+            <button class="nav-link" data-page="inspections">✓ Inspections</button>
+            <button class="nav-link" data-page="documents">▧ Documents</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="status-indicator"></div>
+            <div>
+                <strong>Local system</strong>
+                <small>Connected to database</small>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-area">
+
+        <header class="topbar">
+            <div>
+                <div class="eyebrow">ELVARA OPERATIONS</div>
+                <h2 id="pageTitle">Dashboard</h2>
+            </div>
+            <div class="topbar-right">
+                <span id="currentDate"></span>
+                <div class="user-avatar">E</div>
+            </div>
+        </header>
+
+        <section id="appContent" class="content">
+            <div class="loading">Loading Elvara Logistics...</div>
+        </section>
+
+        <footer>
+            <span>ELVARA LOGISTICS</span>
+            <span>Warehouse & Dispatch Management System</span>
+        </footer>
+
+    </main>
+</div>
+
+<div id="modalBackdrop" class="modal-backdrop hidden">
+    <div class="modal">
+        <div class="modal-header">
+            <h3 id="modalTitle">Details</h3>
+            <button class="close-button" onclick="closeModal()">×</button>
+        </div>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
