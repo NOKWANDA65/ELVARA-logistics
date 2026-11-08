@@ -4,7 +4,7 @@
 **A warehouse, inventory allocation and dispatch management application built with HTML, CSS, JavaScript, Python and SQLite.**
 
 ---
-
+(I SHOULD LOOK AT THIS ONCE AGAIN IT HAS ERRORS!)
 ## 1. About the Project
 
 Elvara Logistics is a warehouse and dispatch management system designed to simplify shipment registration, pallet allocation, fleet management and dispatch operations.
